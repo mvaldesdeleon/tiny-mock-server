@@ -6,6 +6,7 @@ var unslash = path => path.slice(1).replace(/\//g, '.');
 var file = req => './mock/' + unslash(path(req.url)) + '.' + req.method + '.json';
 
 app.all('*', function(req, res) {
+    res.set('Content-Type', 'application/json');
     try { sopen(file(req)).on('error', () => res.sendStatus(404)).pipe(res); }
     catch(err) { res.sendStatus(500); }
 });
