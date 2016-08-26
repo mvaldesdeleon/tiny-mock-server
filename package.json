@@ -1,6 +1,6 @@
 {
   "name": "tiny-mock-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Itty bitty mock server",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,8 @@
     "node": "^6.0.0"
   },
   "repository": "mvaldesdeleon/tiny-mock-server",
-  "files": ["index.js", "mock"]
+  "files": [
+    "index.js",
+    "mock"
+  ]
 }
